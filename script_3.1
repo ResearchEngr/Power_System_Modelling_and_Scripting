@@ -1,0 +1,32 @@
+from optparse import OptionParser
+from cvxopt.base import matrix, mul, sin, cos
+from numpy import linspace
+import sys
+import matplotlib.pyplot as pyplot
+
+
+class base():
+"""base class for functions"""
+def
+init (self):
+
+self.params = {}
+self.n = 0
+def setup(self):
+for key in self.params.keys():
+self. dict [key] = []
+def list2matrix(self):
+for key in self.params.keys():
+self. dict__[key] = matrix(self. dict [key], (self.n, 1), ’d’)
+def add(self, **kwargs):
+self.n += 1
+keys = self.params.keys()
+for key in keys:
+self. dict [key].append(self.params[key])
+for key, val in kwargs.iteritems():
+if not key in keys: continue
+self. dict [key][-1] = val
+def fcall(self, x):
+return 0
+def dfcall(self, x):
+return 0
